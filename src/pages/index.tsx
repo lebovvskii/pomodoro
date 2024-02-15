@@ -1,8 +1,8 @@
 import Head from "next/head";
 
-import { Cursor } from "./components/custom-cursor/cursor.component";
-import { Header } from "./components/header/header-component";
-import { Timer } from "./components/timer/timer-component";
+import { Cursor } from "../components/custom-cursor/cursor.component";
+import { Header } from "../components/header/header-component";
+import { Timer } from "../components/timer/timer-component";
 
 export default function Home() {
   return (
