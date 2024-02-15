@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(225deg, #fefefe, #d5d5d5);
+  box-shadow:  -7px 7px 14px #d1d1d1,
+             7px -7px 14px #fff;
+  border-radius: 0 0 20px 20px;
+  min-width: 600px;
+  font-size: 0.8rem;
+
+  .navLink { 
+    margin: 2vh 5vw;
+    padding: 1.5vh 2vh;
+
+    a {
+      text-decoration: none;
+      font-weight: 900;
+      color: rgb(13 13 13);;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: rgb(5 184 255);
+        text-decoration: none;
+        
+      }
+    }
+  }
+}
