@@ -1,47 +1,74 @@
-import cl from 'classnames'
-import { useEffect, useState } from 'react';
+import cl from "classnames";
+import React, { useEffect, useState } from "react";
 
-import styles from './timer.module.scss'
+import styles from "./timer.module.scss";
 
 export const Timer = () => {
-  const [isActive, setIsActive] = useState(false);
-  const [seconds, setSeconds] = useState(1500);
+  const TIME: number = 15;
+  const [isActive, setActive] = useState(false);
+  const [time, setTime] = useState(TIME); // потом поменять на глобальное состояние
+  const [isPaused, setPaused] = useState(false);
+
   useEffect(() => {
-    let timer: any
-    if (isActive) {
-      timer = setInterval(() => {
-        setSeconds((seconds) => seconds - 1);
+    let interval: any;
+
+    if (isActive && !isPaused) {
+      interval = setInterval(() => {
+        setTime((prevTime) => {
+          if (prevTime === 0) {
+            setActive(false);
+            return TIME;
+          }
+          return prevTime - 1;
+        });
       }, 1000);
+    } else if (!isActive && !isPaused) {
+      setTime(TIME);
     }
-    return () => {
-      clearInterval(timer);
-    };
-  });
+
+    return () => clearInterval(interval);
+  }, [isActive, isPaused]);
+
+  const handleStart = () => {
+    if (!isActive) {
+      setActive(true);
+    }
+    if (isPaused) {
+      setPaused(false);
+    }
+  };
+
+  const handleStop = () => {
+    setActive(false);
+    setTime(TIME);
+    setPaused(false);
+  };
+
+  const handlePause = () => {
+    setPaused(!isPaused);
+  };
+
+  const formatTime = (time: number) => {
+    const minutes = Math.floor(time / 60);
+    const seconds = time % 60;
+    return `${minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+  };
 
   return (
     <>
-      <div className={cl(styles.clockContainer, styles.test)}>
+      <div className={styles.clockContainer}>
         <div className={styles.timerWindow}>
-          <span>Seconds: {seconds}</span>
+          <span>{formatTime(time)}</span>
         </div>
       </div>
-      <div className={cl(styles.timerController)}> 
-        <button
-          onClick={() => {
-            setIsActive(true);
-          }}
-        >
-          Start
-        </button>
-        <button
-          onClick={() => {
-            setIsActive(false);
-          }}
-        >
-          Stop
-        </button>
+      <div className={cl(styles.timerController)}>
+        {isActive && !isPaused ? (
+          <button onClick={handlePause}>Pause</button>
+        ) : (
+          <button onClick={handleStart}>Start</button>
+        )}
+        <button onClick={handleStop}>Stop</button>
       </div>
     </>
   );
-}
-
+};
