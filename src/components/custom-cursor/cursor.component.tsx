@@ -11,7 +11,7 @@ export const Cursor = () => {
   return (
     <AnimatedCursor
       innerSize={10}
-      outerSize={35}
+      outerSize={25}
       color={"5, 184, 255"}
       outerAlpha={0.1}
       innerScale={0.7}
@@ -33,6 +33,7 @@ export const Cursor = () => {
         "button",
         ".link",
         "h2",
+        "svg",
         {
           target: ".custom",
         },

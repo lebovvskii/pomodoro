@@ -10,17 +10,15 @@
     -30px 30px 77px #d9d9d9,
     30px -30px 77px #fff;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
 
-  .timerWindow {
-    font-size: 2rem;
-    margin: 10px auto 0;
-    padding-bottom: 10px;
-  }
-
-  h2 {
-    margin: auto;
-  }
+.timerWindow {
+  font-size: 2rem;
+  margin: 10px auto;
+  user-select: none;
 }
 
 .timerController {
@@ -34,20 +32,16 @@
   box-shadow:
     -17px 17px 35px #c9c9c9,
     17px -17px 35px #fff;
-
-  button {
-    width: 80px;
-    height: 40px;
-    border-radius: 27px;
-    background: #ededed;
-    box-shadow:
-      inset -5px 5px 10px #d1d1d1,
-      inset 5px -5px 10px #fff;
-    border: none;
-    margin: 20px;
-  }
 }
 
-.test {
-  // border: 1px solid red;
+.controllerButton {
+  width: 80px;
+  height: 40px;
+  border-radius: 27px;
+  background: #ededed;
+  box-shadow:
+    inset -5px 5px 10px #d1d1d1,
+    inset 5px -5px 10px #fff;
+  border: none;
+  margin: 20px;
 }
