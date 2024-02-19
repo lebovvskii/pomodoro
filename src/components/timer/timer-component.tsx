@@ -1,3 +1,4 @@
+import cl from "classnames";
 import React, { useEffect, useState } from "react";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 
@@ -60,27 +61,19 @@ export const Timer = () => {
   };
 
   const increaseMinutes = () => {
-    if (time < 3000 && !isPaused && !isActive) {
-      setTime((prev) => prev + 300);
-    }
+    time < 2700 ? setTime((prev) => prev + 300) : setTime(3000);
   };
 
   const decreaseMinutes = () => {
-    if (time > 300 && !isPaused && !isActive) {
-      setTime((prev) => prev - 300);
-    }
+    time < 300 ? setTime(0) : setTime((prev) => prev - 300);
   };
 
   const increaseSeconds = () => {
-    if (time < 3000 && !isPaused && !isActive) {
-      setTime((prev) => prev + 10);
-    }
+    time < 2990 ? setTime((prev) => prev + 10) : setTime(3000);
   };
 
   const decreaseSeconds = () => {
-    if (time >= 10 && !isPaused && !isActive) {
-      setTime((prev) => prev - 10);
-    }
+    time < 10 ? setTime(0) : setTime((prev) => prev - 10);
   };
 
   const { minutes, seconds } = formatTime(time);
@@ -88,13 +81,13 @@ export const Timer = () => {
   return (
     <>
       <div className={styles.clockContainer}>
-        <div className={styles.increaseButtonsContainer}>
+        <div className={styles.increaseArrowContainer}>
           <AiOutlineUp
-            className={styles.increaseMinutes}
+            className={cl(styles.increaseMinutes, styles.arrow)}
             onClick={increaseMinutes}
           />
           <AiOutlineUp
-            className={styles.increaseSeconds}
+            className={cl(styles.increaseSeconds, styles.arrow)}
             onClick={increaseSeconds}
           />
         </div>
@@ -104,13 +97,13 @@ export const Timer = () => {
             {seconds < 10 ? `0${seconds}` : seconds}
           </span>
         </div>
-        <div className={styles.decreaseButtonsContainer}>
+        <div className={styles.decreaseArrowContainer}>
           <AiOutlineDown
-            className={styles.decreaseMinutes}
+            className={cl(styles.decreaseMinutes, styles.arrow)}
             onClick={decreaseMinutes}
           />
           <AiOutlineDown
-            className={styles.decreaseSeconds}
+            className={cl(styles.decreaseSeconds, styles.arrow)}
             onClick={decreaseSeconds}
           />
         </div>

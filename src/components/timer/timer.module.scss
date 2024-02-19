@@ -9,16 +9,18 @@
   box-shadow:
     -30px 30px 77px #d9d9d9,
     30px -30px 77px #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 40% 20% 40%;
   justify-content: center;
 }
 
 .timerWindow {
   font-size: 2rem;
-  margin: 10px auto;
   user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .timerController {
@@ -44,4 +46,20 @@
     inset 5px -5px 10px #fff;
   border: none;
   margin: 20px;
+}
+
+.arrow {
+  color: #c6c6c6;
+}
+
+.increaseArrowContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.decreaseArrowContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
 }
