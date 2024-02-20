@@ -3,24 +3,36 @@ import React from "react";
 
 import styles from "./header.module.scss";
 
-export const Header = () => (
-  <nav>
-    <ul className={styles.nav}>
-      <li className={styles.navLinkContainer}>
-        <Link href="/" className={styles.navLink}>
-          HOME
-        </Link>
-      </li>
-      <li className={styles.navLinkContainer}>
-        <Link href="/about" className={styles.navLink}>
-          ABOUT
-        </Link>
-      </li>
-      <li className={styles.navLinkContainer}>
-        <Link href="/tasks" className={styles.navLink}>
-          TASKS
-        </Link>
-      </li>
-    </ul>
-  </nav>
-);
+export const Header = () => {
+  const PAGES = [
+    {
+      name: "HOME",
+      link: "/",
+    },
+    {
+      name: "ABOUT",
+      link: "/about",
+    },
+    {
+      name: "TASKS",
+      link: "/tasks",
+    },
+  ];
+  return (
+    <>
+      <nav>
+        <ul className={styles.nav}>
+          {PAGES.map((page) => (
+            <Link
+              href={page.link}
+              key={page.name}
+              className={styles.navLinkContainer}
+            >
+              <span>{page.name}</span>
+            </Link>
+          ))}
+        </ul>
+      </nav>
+    </>
+  );
+};

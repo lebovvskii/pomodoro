@@ -51,6 +51,12 @@
 
 .arrow {
   color: #c6c6c6;
+  scale: 1.5;
+  
+
+  &:hover {
+    color:rgb(5 184 255)
+  }
 }
 
 .increaseArrowContainer {
@@ -63,4 +69,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+}
+
+.windowIsActive {
+  color: rgb(5 184 255)
 }

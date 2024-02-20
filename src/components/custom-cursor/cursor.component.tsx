@@ -33,7 +33,6 @@ export const Cursor = () => {
         "button",
         ".link",
         "h2",
-        "svg",
         {
           target: ".custom",
         },

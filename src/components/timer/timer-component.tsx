@@ -82,30 +82,38 @@ export const Timer = () => {
     <>
       <div className={styles.clockContainer}>
         <div className={styles.increaseArrowContainer}>
-          <AiOutlineUp
-            className={cl(styles.increaseMinutes, styles.arrow)}
-            onClick={increaseMinutes}
-          />
-          <AiOutlineUp
-            className={cl(styles.increaseSeconds, styles.arrow)}
-            onClick={increaseSeconds}
-          />
+          <a>
+            <AiOutlineUp
+              className={cl(styles.increaseMinutes, styles.arrow)}
+              onClick={increaseMinutes}
+            />
+          </a>
+          <a>
+            <AiOutlineUp
+              className={cl(styles.increaseSeconds, styles.arrow)}
+              onClick={increaseSeconds}
+            />
+          </a>
         </div>
         <div className={styles.timerWindow}>
-          <span>
+          <span className={(isActive && !isPaused) ? styles.windowIsActive : ''}>
             {minutes < 10 ? `0${minutes}` : minutes}:
             {seconds < 10 ? `0${seconds}` : seconds}
           </span>
         </div>
         <div className={styles.decreaseArrowContainer}>
-          <AiOutlineDown
-            className={cl(styles.decreaseMinutes, styles.arrow)}
-            onClick={decreaseMinutes}
-          />
-          <AiOutlineDown
-            className={cl(styles.decreaseSeconds, styles.arrow)}
-            onClick={decreaseSeconds}
-          />
+          <a>
+            <AiOutlineDown
+              className={cl(styles.decreaseMinutes, styles.arrow)}
+              onClick={decreaseMinutes}
+            />
+          </a>
+          <a>
+            <AiOutlineDown
+              className={cl(styles.decreaseSeconds, styles.arrow)}
+              onClick={decreaseSeconds}
+            />
+          </a>
         </div>
       </div>
       <div className={styles.timerController}>
