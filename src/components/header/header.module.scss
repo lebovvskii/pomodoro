@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(225deg, #fefefe, #d5d5d5);
+  box-shadow:
+    -7px 7px 14px #d1d1d1,
+    7px -7px 14px #fff;
+  border-radius: 0 0 20px 20px;
+  min-width: 600px;
+  font-size: 0.8rem;
+  min-height: 100px;
+}
+
+.navLinkContainer {
+  margin: 2vh 5vw;
+  padding: 1.5vh 2vh;
+  border-radius: 30px;
+  border: 1.5px solid rgb(5 184 255 / 0%);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: rgb(13 13 13);
+
+  &:hover {
+    border: 1.5px solid rgb(5 184 255);
+    transform: scale(1);
+    color: rgb(5 184 255);
+    text-decoration: none;
+  }
+}
