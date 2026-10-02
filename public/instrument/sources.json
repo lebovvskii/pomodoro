@@ -1,0 +1,20 @@
+{
+  "walnut-color.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table_001/wood_table_001_diff_1k.jpg",
+  "walnut-normal.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table_001/wood_table_001_nor_gl_1k.jpg",
+  "walnut-arm.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table_001/wood_table_001_arm_1k.jpg",
+  "studio.hdr": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_03_1k.hdr",
+  "cream-down-1.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/cream/press/GENERIC_R1.mp3",
+  "cream-down-2.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/cream/press/GENERIC_R2.mp3",
+  "cream-down-3.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/cream/press/GENERIC_R3.mp3",
+  "cream-up.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/cream/release/GENERIC.mp3",
+  "holypanda-down-1.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/holypanda/press/GENERIC_R1.mp3",
+  "holypanda-down-2.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/holypanda/press/GENERIC_R2.mp3",
+  "holypanda-down-3.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/holypanda/press/GENERIC_R3.mp3",
+  "holypanda-up.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/holypanda/release/GENERIC.mp3",
+  "boxnavy-down-1.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/boxnavy/press/GENERIC_R1.mp3",
+  "boxnavy-down-2.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/boxnavy/press/GENERIC_R2.mp3",
+  "boxnavy-down-3.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/boxnavy/press/GENERIC_R3.mp3",
+  "boxnavy-up.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/boxnavy/release/GENERIC.mp3",
+  "cream-wide-down.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/cream/press/SPACE.mp3",
+  "cream-wide-up.mp3": "https://raw.githubusercontent.com/tplai/kbsim/master/src/assets/audio/cream/release/SPACE.mp3"
+}

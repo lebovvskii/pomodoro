@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="386" viewBox="0 0 1200 386" role="img" aria-labelledby="title description">
+<title id="title">Five Tempo control architectures</title>
+<desc id="description">A schematic overview of the touch terminal, clock regulator, laboratory console, open engine and magical astrolabe. This is an illustration of the control layouts, not a browser screenshot.</desc>
+<rect width="1200" height="386" rx="16" fill="#10151b"/>
+<text x="36" y="42" fill="#e4e6df" font-family="monospace" font-size="14" letter-spacing="3">TEMPO / FIVE INSTRUMENTS</text>
+<text x="1164" y="42" text-anchor="end" fill="#85929f" font-family="monospace" font-size="10" letter-spacing="1">CONTROL LAYOUTS · SCHEMATIC</text>
+<g stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(22 68)">
+<rect width="222" height="294" rx="10" fill="#17212b"/>
+<g transform="translate(30 15) scale(2.8)" fill="none" stroke="#55dfef" stroke-width=".65">
+<path d="M16 3h24l4 5v28H13V7ZM12 38h34"/><path d="M17 9h23v15H17zM18 29h21M24 27v4"/><circle cx="28" cy="19" r="3"/><path d="M35 13h2M35 17h2M35 21h2M20 34h4M33 34h4"/>
+</g>
+<text x="111" y="171" text-anchor="middle" fill="#78edf6" font-family="sans-serif" font-size="16">NEON / 2091</text>
+<text x="111" y="200" text-anchor="middle" fill="#d8e5ee" font-family="sans-serif" font-size="13">Touch terminal</text>
+<text x="111" y="232" text-anchor="middle" fill="#94aaba" font-family="monospace" font-size="11">SWIPE THE TIMELINE</text>
+<text x="111" y="255" text-anchor="middle" fill="#94aaba" font-family="monospace" font-size="11">TAP TO ENGAGE</text>
+</g>
+<g transform="translate(255 68)">
+<rect width="222" height="294" rx="10" fill="#30291e"/>
+<g transform="translate(31 15) scale(2.8)" fill="none" stroke="#d7b776" stroke-width=".65">
+<rect x="7" y="33" width="45" height="7" rx="2"/><circle cx="24" cy="18" r="15"/><circle cx="24" cy="18" r="12"/><path d="m24 7 1 12-6 6M39 18h8m-5-3v6M49 7v19"/><circle cx="49" cy="28" r="2"/><path d="m18 37 2-3M11 5V2"/>
+</g>
+<text x="111" y="171" text-anchor="middle" fill="#e3c787" font-family="sans-serif" font-size="16">CHRONOMETRIST</text>
+<text x="111" y="200" text-anchor="middle" fill="#e6d9ba" font-family="sans-serif" font-size="13">Round clock regulator</text>
+<text x="111" y="232" text-anchor="middle" fill="#b6a17c" font-family="monospace" font-size="11">TURN THE WINDING KEY</text>
+<text x="111" y="255" text-anchor="middle" fill="#b6a17c" font-family="monospace" font-size="11">PULL THE CHAIN</text>
+</g>
+<g transform="translate(488 68)">
+<rect width="222" height="294" rx="10" fill="#293022"/>
+<g transform="translate(31 15) scale(2.8)" fill="none" stroke="#c0c7a0" stroke-width=".65">
+<rect x="13" y="7" width="33" height="33" rx="2"/><path d="M23 7V3h13v4M36 34h7"/>
+<rect x="16.5" y="11" width="5" height="9" rx="2.5"/><rect x="23.5" y="11" width="5" height="9" rx="2.5"/><rect x="30.5" y="11" width="5" height="9" rx="2.5"/><rect x="37.5" y="11" width="5" height="9" rx="2.5"/>
+<circle cx="23" cy="27" r="4"/><circle cx="37" cy="27" r="5"/><path d="m23 27 2-3"/><circle cx="22" cy="35" r="2.5"/><circle cx="29" cy="35" r="1.8"/>
+</g>
+<text x="111" y="171" text-anchor="middle" fill="#d4d9b6" font-family="sans-serif" font-size="16">KHRONOS / 1984</text>
+<text x="111" y="200" text-anchor="middle" fill="#d6dbc9" font-family="sans-serif" font-size="13">Vertical laboratory console</text>
+<text x="111" y="232" text-anchor="middle" fill="#a0aa8f" font-family="monospace" font-size="11">ROTARY MODE SELECTOR</text>
+<text x="111" y="255" text-anchor="middle" fill="#a0aa8f" font-family="monospace" font-size="11">PRESS THE PLUNGER</text>
+</g>
+<g transform="translate(721 68)">
+<rect width="222" height="294" rx="10" fill="#2b2e28"/>
+<g transform="translate(31 15) scale(2.8)" fill="none" stroke="#daa666" stroke-width=".65">
+<rect x="13" y="6" width="29" height="12" rx="1"/><path d="M20 8v8M27 8v8M34 8v8M16 19v19h19V19M40 11h11v26H40Z"/><path d="M39 22h-4M39 28h-4M46 16v11m-3-11h6M21 33h10M19 6V2"/><circle cx="10" cy="25" r="7"/><path d="m10 25-4-3M10 25v5M10 25l5-2"/>
+</g>
+<text x="111" y="171" text-anchor="middle" fill="#e2b77a" font-family="sans-serif" font-size="16">IRONWORKS / MK IV</text>
+<text x="111" y="200" text-anchor="middle" fill="#dadacf" font-family="sans-serif" font-size="13">Open engine assembly</text>
+<text x="111" y="232" text-anchor="middle" fill="#a5a895" font-family="monospace" font-size="11">TURN THE CRANK</text>
+<text x="111" y="255" text-anchor="middle" fill="#a5a895" font-family="monospace" font-size="11">PULL THE IGNITION LEVER</text>
+</g>
+<g transform="translate(954 68)">
+<rect width="222" height="294" rx="10" fill="#292037"/>
+<g transform="translate(31 15) scale(2.8)" fill="none" stroke="#c5a4f6" stroke-width=".65">
+<rect x="14" y="35" width="31" height="5" rx="1"/><circle cx="29" cy="18" r="16"/><circle cx="29" cy="18" r="12"/><path d="m29 10 5 8-5 8-5-8ZM16 22l3 13M42 22l-3 13M12 14v16M29 2V0"/><path d="m12 30 2 3-2 3-2-3ZM20 28l2 2-2 2-2-2ZM29 30l2 2-2 2-2-2ZM38 28l2 2-2 2-2-2Z"/>
+</g>
+<text x="111" y="171" text-anchor="middle" fill="#d2b3f7" font-family="sans-serif" font-size="16">AETHER ENGINE</text>
+<text x="111" y="200" text-anchor="middle" fill="#e0d3ed" font-family="sans-serif" font-size="13">Orb and ring astrolabe</text>
+<text x="111" y="232" text-anchor="middle" fill="#b0a0c3" font-family="monospace" font-size="11">MOVE THE OUTER RING</text>
+<text x="111" y="255" text-anchor="middle" fill="#b0a0c3" font-family="monospace" font-size="11">HOLD, CHARGE, RELEASE</text>
+</g>
+</g>
+</svg>

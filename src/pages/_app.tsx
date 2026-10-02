@@ -1,17 +1,13 @@
 import "@/styles/globals.scss";
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/500.css";
+import "@fontsource/dm-sans/600.css";
+import "@fontsource/dm-mono/400.css";
+import "@fontsource/instrument-serif/400.css";
+import "@fontsource/instrument-serif/400-italic.css";
 
 import type { AppProps } from "next/app";
-import { Montserrat } from "next/font/google";
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 export default function App({ Component, pageProps }: AppProps) {
-  return (
-    <main className={montserrat.className}>
-      <Component {...pageProps} />;
-    </main>
-  );
+  return <Component {...pageProps} />;
 }
